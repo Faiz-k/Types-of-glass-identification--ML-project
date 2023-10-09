@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Glass Attributes Input</title>
+</head>
+<body>
+    <h1>Enter Glass Attributes</h1>
+    <form  method="post">
+        {%csrf_token%}
+        <label for="ri">RI: refractive index</label>
+        <input type="number" name="ri" id="ri" step="0.01" required><br>
+
+        <label for="na">Na: Sodium (weight percent)</label>
+        <input type="number" name="na" id="na" step="0.01" required><br>
+
+        <label for="mg">Mg: Magnesium (weight percent)</label>
+        <input type="number" name="mg" id="mg" step="0.01" required><br>
+
+        <label for="al">Al: Aluminum (weight percent)</label>
+        <input type="number" name="al" id="al" step="0.01" required><br>
+
+        <label for="si">Si: Silicon (weight percent)</label>
+        <input type="number" name="si" id="si" step="0.01" required><br>
+
+        <label for="k">K: Potassium (weight percent)</label>
+        <input type="number" name="k" id="k" step="0.01" required><br>
+
+        <label for="ca">Ca: Calcium (weight percent)</label>
+        <input type="number" name="ca" id="ca" step="0.01" required><br>
+
+        <label for="ba">Ba: Barium (weight percent)</label>
+        <input type="number" name="ba" id="ba" step="0.01" required><br>
+
+        <label for="fe">Fe: Iron (weight percent)</label>
+        <input type="number" name="fe" id="fe" step="0.01" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    {{error}}
+    {{predicted_type}}
+</body>
+</html>
